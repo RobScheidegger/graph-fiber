@@ -1,5 +1,10 @@
+import * as x from "./scripts/graph.json";
+import { GraphSchema } from "./scripts/schema";
+
 function App() {
-    return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+    console.log(GraphSchema.safeParse(x));
+
+    return <pre className="whitespace-pre-wrap">{JSON.stringify(x)}</pre>;
 }
 
 export default App;

@@ -16,9 +16,7 @@ export const NodeSchema = z.object({
 export const GraphSchema = z.object({
     nodeCount: z.number().nonnegative(),
     edgeCount: z.number().nonnegative(),
-    nodes: z.map(z.number(), NodeSchema),
-    edges: z.map(z.number(), EdgeSchema),
+    nodes: z.array(NodeSchema),
+    edges: z.array(EdgeSchema),
     isDirected: z.boolean(),
 });
-
-console.log(JSON.parse("./graph.json"));

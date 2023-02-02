@@ -2,26 +2,26 @@
     "nodeCount": 3,
     "edgeCount": 3,
     "isDirected": false,
-    "nodes": {
-        "1": { "id": 1, "outEdges": [2, 3], "inEdges": [2, 3] },
-        "2": { "id": 2, "outEdges": [1, 3], "inEdges": [1, 3] },
-        "3": { "id": 3, "outEdges": [1, 2], "inEdges": [1, 2] }
-    },
+    "nodes": [
+        { "id": 1, "outEdges": [2, 3], "inEdges": [2, 3] },
+        { "id": 2, "outEdges": [1, 3], "inEdges": [1, 3] },
+        { "id": 3, "outEdges": [1, 2], "inEdges": [1, 2] }
+    ],
     "edges": [
         {
-            "id": "1",
-            "fromNode": "1",
-            "toNode": "2"
+            "id": 1,
+            "fromNode": 1,
+            "toNode": 2
         },
         {
-            "id": "2",
-            "fromNode": "1",
-            "toNode": "3"
+            "id": 2,
+            "fromNode": 1,
+            "toNode": 3
         },
         {
-            "id": "3",
-            "fromNode": "2",
-            "toNode": "3"
+            "id": 3,
+            "fromNode": 2,
+            "toNode": 3
         }
     ]
 }
